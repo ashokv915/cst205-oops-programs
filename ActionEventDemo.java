@@ -17,6 +17,8 @@ class MyActionListener implements ActionListener
         System.out.println("\tMETA : " +checkMod(modifiers, ActionEvent.META_MASK) );
         System.out.println("\tSHIFT : " +checkMod(modifiers, ActionEvent.SHIFT_MASK) );
 
+        System.out.println("ALT MASK : "+ActionEvent.ALT_MASK);
+
         Object source = e.getSource();
 
         if(source instanceof JButton) {
@@ -27,6 +29,8 @@ class MyActionListener implements ActionListener
 
     private boolean checkMod(int modifiers, int mask)
     {
+        // System.out.println("Modifiers "+modifiers);
+        // System.out.println("Mask is "+mask);
         return ((modifiers & mask) == mask);
     }
 }
