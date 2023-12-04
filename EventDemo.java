@@ -32,13 +32,7 @@ public class EventDemo {
         jtf.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-                String txt = jtf.getText();
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e1) {
-                    
-                    e1.printStackTrace();
-                }
+                final String txt = jtf.getText();
                 jlab.setText(txt);
             }
         });
