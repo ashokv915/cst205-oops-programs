@@ -2,7 +2,7 @@ import java.sql.*;
 
 //Complie : javac JDBCDemo.java
 //Run : java -cp .:mysql-connector-j-8.2.0.jar JDBCDemo
-//mysql-connector-j-8.2.0.jar file should be present your current working directory
+//mysql-connector-j-8.2.0.jar file should be present in your current working directory
 
 public class JDBCDemo {
     public static void main(String[] args) {
